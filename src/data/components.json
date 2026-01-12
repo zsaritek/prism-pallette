@@ -1,0 +1,45 @@
+{
+  "components": [
+    {
+      "id": "button",
+      "name": "Button",
+      "description": "Primary action button.",
+      "variants": [
+        { "id": "default", "label": "Default" },
+        { "id": "secondary", "label": "Secondary" },
+        { "id": "outline", "label": "Outline" },
+        { "id": "destructive", "label": "Destructive" }
+      ],
+      "sizes": [
+        { "id": "sm", "label": "Small" },
+        { "id": "default", "label": "Default" },
+        { "id": "lg", "label": "Large" }
+      ],
+      "defaults": { "variant": "default", "size": "default", "disabled": false, "label": "Button" }
+    },
+    {
+      "id": "badge",
+      "name": "Badge",
+      "description": "Small status + label.",
+      "variants": [
+        { "id": "default", "label": "Default" },
+        { "id": "secondary", "label": "Secondary" },
+        { "id": "outline", "label": "Outline" },
+        { "id": "destructive", "label": "Destructive" }
+      ],
+      "defaults": { "variant": "secondary", "label": "Badge" }
+    },
+    {
+      "id": "card",
+      "name": "Card",
+      "description": "Container with header/content.",
+      "variants": [
+        { "id": "default", "label": "Default" },
+        { "id": "muted", "label": "Muted" }
+      ],
+      "defaults": { "variant": "default", "title": "Card title", "description": "A short description.", "body": "Card content goes here." }
+    }
+  ]
+}
+
+
