@@ -13,7 +13,7 @@ function SidebarNavLink({ to, children }) {
       className={({ isActive }) =>
         [
           'flex items-center justify-between rounded-xl px-3 py-2 text-sm font-medium transition',
-          isActive ? 'bg-zinc-900 text-white' : 'text-zinc-700 hover:bg-zinc-100',
+          isActive ? 'bg-[#6366F1]/10 text-[#6366F1]' : 'text-zinc-700 hover:bg-zinc-100',
         ].join(' ')
       }
     >

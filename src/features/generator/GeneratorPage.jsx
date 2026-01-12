@@ -111,7 +111,7 @@ export function GeneratorPage() {
                       className={[
                         'inline-flex h-10 items-center rounded-[var(--clm-radius,16px)] border px-3 text-sm font-medium transition',
                         buttonDisabled
-                          ? 'border-zinc-900 bg-zinc-900 text-white'
+                          ? 'border-[#6366F1] bg-[#6366F1]/10 text-[#6366F1]'
                           : 'border-zinc-200 bg-white hover:bg-zinc-100',
                       ].join(' ')}
                     >

@@ -6,8 +6,14 @@
 @layer base {
   :root {
     color-scheme: light;
-    --clm-primary: #18181b;
-    --clm-primary-hover: #27272a;
+    /* Controlled color system */
+    --clm-neutral: #111827;
+    --clm-accent: #6366F1;
+    --clm-accent-hover: #4F46E5;
+
+    /* Legacy token vars (kept for compatibility; neutral UI stays neutral). */
+    --clm-primary: var(--clm-neutral);
+    --clm-primary-hover: #0b1220;
     --clm-secondary: #f4f4f5;
     --clm-secondary-hover: #e4e4e7;
     --clm-radius: 16px;

@@ -70,11 +70,16 @@ export function ComponentsPage() {
                   onClick={() => setSelection({ c: c.id, v: c.defaults?.variant || c.variants?.[0]?.id })}
                   className={cn(
                     'w-full rounded-xl px-3 py-2 text-left transition',
-                    c.id === selectedComponent?.id ? 'bg-zinc-900 text-white' : 'hover:bg-zinc-50',
+                    c.id === selectedComponent?.id ? 'bg-[#6366F1]/10 text-[var(--clm-neutral)]' : 'hover:bg-zinc-50',
                   )}
                 >
                   <div className="text-sm font-semibold">{c.name}</div>
-                  <div className={cn('mt-1 text-xs', c.id === selectedComponent?.id ? 'text-white/70' : 'text-zinc-500')}>
+                  <div
+                    className={cn(
+                      'mt-1 text-xs',
+                      c.id === selectedComponent?.id ? 'text-zinc-600' : 'text-zinc-500',
+                    )}
+                  >
                     {c.description}
                   </div>
                 </button>
@@ -104,7 +109,9 @@ export function ComponentsPage() {
                       onClick={() => setSelection({ v: v.id })}
                       className={cn(
                         'rounded-full border px-3 py-1 text-xs font-medium transition',
-                        active ? 'border-zinc-900 bg-zinc-900 text-white' : 'border-zinc-200 bg-white hover:bg-zinc-50',
+                        active
+                          ? 'border-[#6366F1] bg-[#6366F1] text-white'
+                          : 'border-zinc-200 bg-white hover:bg-zinc-50',
                       )}
                     >
                       {v.label}
@@ -200,7 +207,9 @@ function ButtonProps({ component, variantId }) {
           onClick={() => setDisabled(!disabled)}
           className={cn(
             'inline-flex h-10 items-center rounded-xl border px-3 text-sm font-medium transition',
-            disabled ? 'border-zinc-900 bg-zinc-900 text-white' : 'border-zinc-200 bg-white hover:bg-zinc-100',
+            disabled
+              ? 'border-[#6366F1] bg-[#6366F1]/10 text-[#6366F1]'
+              : 'border-zinc-200 bg-white hover:bg-zinc-100',
           )}
         >
           {disabled ? 'On' : 'Off'}

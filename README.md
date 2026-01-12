@@ -53,4 +53,4 @@ src/
 
 ## Screenshots
 
-- (Add screenshots here)
+![Component Library Manager screenshot](docs/screenshots/prism-palette.png)
