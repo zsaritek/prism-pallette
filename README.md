@@ -1,16 +1,56 @@
-# React + Vite
+# Component Library Manager (MVP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A private, local-first app to manage a small component library:
 
-Currently, two official plugins are available:
+- Browse components and variants
+- Preview variants with a few basic props
+- Generate copy-paste JSX snippets
+- Edit a small set of design tokens (colors, radius, spacing)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Everything stays local: no backend, no external database.
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Build:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+```
+
+## How to use
+
+- **Components**: pick a component from the catalog, choose a variant, and tweak basic props.
+- **Tokens**: edit primary/secondary colors, radius, and spacing. Changes apply instantly and persist locally.
+- **Generator**: select component + variant + options, then copy the JSX snippet.
+
+## Local storage
+
+- **tokens**: `clm_tokens`
+- **components**: (not editable in the MVP yet; seed data lives in JSON)
+
+To reset, use the **Reset** button on the Tokens page or clear localStorage.
+
+## File structure
+
+```
+src/
+  app/
+  components/
+    layout/
+    ui/              # local shadcn-style copies
+  data/              # JSON seeds
+  features/
+    components/
+    tokens/
+    generator/
+  lib/
+```
+
+## Screenshots
+
+- (Add screenshots here)
