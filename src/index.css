@@ -6,6 +6,12 @@
 @layer base {
   :root {
     color-scheme: light;
+    --clm-primary: #18181b;
+    --clm-primary-hover: #27272a;
+    --clm-secondary: #f4f4f5;
+    --clm-secondary-hover: #e4e4e7;
+    --clm-radius: 16px;
+    --clm-space: 24px;
   }
 
   html,
